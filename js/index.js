@@ -1,5 +1,6 @@
 let area = document.getElementById('area'),
-    move = 0;   
+    move = 0;
+
 
 area.addEventListener('click', event => {
     if (move % 2 === 0){
@@ -26,11 +27,11 @@ check = () => {
     ]
     
     for(let i = 0; i < arr.length; i++) {
-        if (boxes[arr[i][0]].innerHTMl == 'X' && boxes[arr[i][1]].innerHTMl == 'X' && boxes[arr[i][2]].innerHTMl == 'X') {
-            alert('winner - x')
+        if (boxes[arr[i][0]].innerHTML == 'X' && boxes[arr[i][1]].innerHTML == 'X' && boxes[arr[i][2]].innerHTML == 'X') {
+            alert('Winner - X')
             location.reload()
         }else if (boxes[arr[i][0]].innerHTMl == 'O' && boxes[arr[i][1]].innerHTMl == 'O' && boxes[arr[i][2]].innerHTMl == 'O') {
-            alert('winner - o')
+            alert('Winner - O')
             location.reload()
        }
     }

@@ -25,3 +25,18 @@
   align-items: center;
   font-size: 50px;
 }
+
+.reload {
+  width: 200px;
+  height: 50px;
+  position: relative;
+  top: 200px;
+  right: 250px;
+  border: none;
+}
+
+.reload:hover {
+  background: wheat;
+  box-shadow: 0 0 20px wheat, 0 0 40px wheat, 0 0 80px wheat;
+  transition: all ease 0.5s;
+}
