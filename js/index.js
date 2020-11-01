@@ -20,6 +20,17 @@ check = () => {
         [6,7,8],
         [0,3,6],
         [1,4,7],
-        [2,5,8] 
+        [2,5,8],
+        [0,4,8],
+        [2,4,6]
     ]
+
+
+    for(let i = 0; i < arr.length; i++) {
+        if (boxes[arr[i][0]].innerHTMl == 'X' && boxes[arr[i][1]].innerHTMl == 'X' && boxes[arr[i][2]].innerHTMl == 'X') {
+            alert('winner - x')
+        }else if (boxes[arr[i][0]].innerHTMl == 'O' && boxes[arr[i][1]].innerHTMl == 'O' && boxes[arr[i][2]].innerHTMl == 'O') {
+            alert('winner - o')
+        }
+    }
 }
