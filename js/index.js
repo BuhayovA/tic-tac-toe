@@ -24,13 +24,15 @@ check = () => {
         [0,4,8],
         [2,4,6]
     ]
-
-
+    
     for(let i = 0; i < arr.length; i++) {
         if (boxes[arr[i][0]].innerHTMl == 'X' && boxes[arr[i][1]].innerHTMl == 'X' && boxes[arr[i][2]].innerHTMl == 'X') {
             alert('winner - x')
+            location.reload()
         }else if (boxes[arr[i][0]].innerHTMl == 'O' && boxes[arr[i][1]].innerHTMl == 'O' && boxes[arr[i][2]].innerHTMl == 'O') {
             alert('winner - o')
-        }
+            location.reload()
+       }
     }
 }
+
