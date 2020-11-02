@@ -28,11 +28,15 @@ check = () => {
     
     for(let i = 0; i < arr.length; i++) {
         if (boxes[arr[i][0]].innerHTML == 'X' && boxes[arr[i][1]].innerHTML == 'X' && boxes[arr[i][2]].innerHTML == 'X') {
-            alert('Winner - X')
-            location.reload()
+            setTimeout( () => {
+                alert('Winner - X')
+                location.reload()
+              }, 100)
         }else if (boxes[arr[i][0]].innerHTMl == 'O' && boxes[arr[i][1]].innerHTMl == 'O' && boxes[arr[i][2]].innerHTMl == 'O') {
-            alert('Winner - O')
-            location.reload()
+            setTimeout( () => {
+                alert('Winner - O')
+                location.reload()
+            }, 100)
        }
     }
 }
